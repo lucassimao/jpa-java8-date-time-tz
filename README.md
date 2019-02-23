@@ -8,13 +8,14 @@ Testing how JPA, hibernate and the java 8 date and time APIs interact with mysql
 > mvn exec:java
 
 ## Conclusions
+<pre>
 Java app TZ == DB TZ
     without hibernate.jdbc.time_zone : stores ZonedDateTime instances with database TZ
     with hibernate.jdbc.time_zone : stores ZonedDateTime instances with database TZ
 App TZ != db TZ
     without hibernate.jdbc.time_zone : stores ZonedDateTime instances with database TZ
     with hibernate.jdbc.time_zone : stores ZonedDateTime instances with database TZ
-
+</pre>
 
 
 
