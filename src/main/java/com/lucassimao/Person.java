@@ -1,6 +1,5 @@
 package com.lucassimao;
 
-import java.time.LocalDate;
 import java.time.ZonedDateTime;
 
 import javax.persistence.Entity;
@@ -17,9 +16,6 @@ public class Person{
     private String nome;
     ZonedDateTime birthdate;
 
-    /**
-     * @param birthdate the birthdate to set
-     */
     public void setBirthdate(ZonedDateTime birthdate) {
         this.birthdate = birthdate;
     }
